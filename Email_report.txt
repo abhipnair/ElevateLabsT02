@@ -1,0 +1,99 @@
+Phishing Email Analysis Report
+
+1. Email Summary
+
+Subject: Immediate Action Required: Verify Your Account
+
+From: IT Support it-support@secure-notices.com
+
+To: abhipnair@password.com
+
+Date Received: May 27, 2025, 08:34 AM UTC 
+
+Body Content Summary:
+
+Dear User,
+
+We have detected unusual activity in your account. To ensure the safety of your data, we request you to verify your credentials by clicking the link below:
+
+Verify Account Now
+
+Failure to act within 24 hours will result in suspension.
+
+Sincerely,
+IT Helpdesk
+
+2. Email Structure Analysis
+
+Header Inspection:
+
+Return-Path: suspicious domain (secure-notices.com)
+
+Reply-To: it-support@secure-notices.com (not a company domain)
+
+SPF/DKIM/DMARC: failed or missing
+
+Display Name Spoofing:
+
+The display name "IT Support" appears legitimate, but the actual domain does not match any official organization.
+
+Embedded URL:
+
+URL redirects to a fake login page designed to steal credentials.
+
+Hosted on a domain registered recently with no security certificates.
+
+3. Behavioral Analysis (Static and Dynamic)
+
+Using Tools:
+
+emlAnalyzer: Extracted metadata, links, and attachments.
+
+exiftool: Checked timestamps and creation details of attachments.
+
+strings: Analyzed embedded code and suspicious payloads.
+
+oletools: Ensured no macro payloads (if attachments present).
+
+VirusTotal: Marked domain as phishing.
+
+urlscan.io: Showed fake login form mimicking Office365 UI.
+
+Whois Lookup: Domain registered anonymously 2 days before email was sent.
+
+4. Indicators of Compromise (IOCs)
+
+Suspicious Domain: secure-notices.com
+
+Malicious URL: https://secure-notices.com/verify-account
+
+Email Header Manipulation: SPF/DKIM fail
+
+Impersonation Indicators: Use of corporate-sounding language with urgency
+
+5. Risk Impact and Potential Threat
+
+Target: Likely corporate employees or students
+
+Risk: Credential theft, lateral movement in network, potential data breach
+
+Urgency and Fear: Common psychological tactics used in phishing
+
+6. Mitigation and Recommendations
+
+Train users on phishing recognition and verification practices
+
+Enable SPF, DKIM, and DMARC validation on mail servers
+
+Use email filtering and sandboxing tools
+
+Block suspicious domains at the firewall/DNS level
+
+Report domain and email to anti-phishing platforms
+
+7. Conclusion
+
+This phishing attempt leverages social engineering, spoofing, and a fake login page to extract credentials. While the language and format appear legitimate, technical indicators reveal clear signs of malicious intent. Organizations should combine user awareness training with layered email security controls to mitigate such threats.
+
+Prepared by: [Analyst Name]Date: [Insert Date]Report Version: 1.0
+
