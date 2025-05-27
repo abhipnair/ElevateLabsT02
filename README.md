@@ -32,4 +32,4 @@ Always verify email headers, scan suspicious links, and educate users on recogni
 
 ---
 
-📁 **Refer to the full [PDF Report](./Phishing_Email_Analysis_Report.pdf)** for detailed analysis.
+📁 **Refer to the txt [TXT Report](./Email_report.txt)** for detailed analysis.
