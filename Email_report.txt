@@ -95,5 +95,7 @@ Report domain and email to anti-phishing platforms
 
 This phishing attempt leverages social engineering, spoofing, and a fake login page to extract credentials. While the language and format appear legitimate, technical indicators reveal clear signs of malicious intent. Organizations should combine user awareness training with layered email security controls to mitigate such threats.
 
-Prepared by: [Analyst Name]Date: [Insert Date]Report Version: 1.0
+Prepared by: abhipnair
+Date: 27th May 2025
+Report Version: 1.0
 
