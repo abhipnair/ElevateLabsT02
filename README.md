@@ -1,4 +1,4 @@
-# Phishing Email Analysis - Case Study
+# 🎣Task 2: Phishing Email Analysis - Case Study
 
 This repository contains a sample phishing email and a detailed analysis to demonstrate email threat detection and analysis techniques.
 
